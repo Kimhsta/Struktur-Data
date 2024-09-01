@@ -23,6 +23,6 @@ int main()
             idxmax = i;
         }
     }
-    cout << "Nilai Maksimum: " << idxmax << endl;
+    cout << "Index Nilai Maksimum: " << idxmax << endl;
     return 0;
 }
