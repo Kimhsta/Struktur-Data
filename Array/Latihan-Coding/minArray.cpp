@@ -4,26 +4,25 @@ using namespace std;
 int main()
 {
     // KAMUS
-    int i, coutA;
-    char TabInt[10]; // Deklarasi array of charakter berukuran 10
+    int i, min;
+    int TabInt[10]; // Deklarasi array of charakter berukuran 10
 
     // ALGORITMA
-    cout << "Masukkan 10 Nama:  " << endl;
+    cout << "Masukkan Nilai:  " << endl;
     for (i = 0; i < 10; i++)
     {
         cin >> TabInt[i];
     }
 
     // Menulis Kembali Ke Layar
-    coutA = 0;
+    min = TabInt[0]; // inisialisai min dgn element ke-0
     for (i = 1; i < 10; i++)
     {
-        cout << TabInt[i] << endl;
-        if (TabInt[i] == 'A' || TabInt[i] == 'a')
+        if (TabInt[i] < min)
         {
-            coutA++;
+            min = TabInt[i];
         }
     }
-    cout << "Nilai Minimum adalah: " << coutA << endl;
+    cout << "Nilai Minimum adalah: " << min << endl;
     return 0;
 }
