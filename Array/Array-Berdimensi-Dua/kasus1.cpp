@@ -3,11 +3,12 @@ using namespace std;
 
 int main()
 {
-    int nilai[5][2] = {{100, 90},
-                       {90, 80},
-                       {78, 100},
-                       {90, 90},
-                       {66, 100}};
+    int nilai[5][2] = {
+        {100, 90},
+        {90, 80},
+        {78, 100},
+        {90, 90},
+        {66, 100}};
 
     int baris, kolom;
     cout << "Isi dari array dua dimensi nilai[5][2] : \n";
