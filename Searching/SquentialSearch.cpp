@@ -64,12 +64,9 @@ void sequensial_search()
         {
             system("cls");
             cout << "Data Ke            : " << x + 1 << endl;
-            cout << "NIM                : ";
-            cin >> nim[x];
-            cout << "Nama Mahasiswa     : ";
-            cin >> nm[x];
-            cout << "Nilai Ujia         : ";
-            cin >> nl[x];
+            cout << "NIM                : " << nim[x] << endl;
+            cout << "Nama Mahasiswa     : " << nm[x] << endl;
+            cout << "Nilai Ujia         : " << nl[x] << endl;
             cout << endl;
         }
         else
