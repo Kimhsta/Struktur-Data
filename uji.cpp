@@ -60,3 +60,18 @@ void MainWindow::isidata()
 }
 
 // Implementasi untuk fungsi sequensial_search(), binary_search(), dan cetakdata() di sini
+
+// temp = arr[minIndex];
+nim_temp = nim[z];
+nm_temp = nm[z];
+nl_temp = nl[z];
+
+// arr[minIndex] = arr[i];
+nim[z] = nim[x];
+nm[z] = nm[x];
+nl[z] = nl[x];
+
+// arr[i] = temp;
+nim[x] = nim_temp;
+nm[x] = nim_temp;
+nl[x] = nl_temp;
