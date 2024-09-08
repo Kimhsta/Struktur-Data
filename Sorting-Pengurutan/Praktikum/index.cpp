@@ -23,8 +23,9 @@ void isidata()
         cout << "Data Ke            : " << x + 1 << endl;
         cout << "NIM                : ";
         cin >> nim[x];
+        cin.ignore();
         cout << "Nama Mahasiswa     : ";
-        cin >> nm[x];
+        getline(cin, nm[x]);
         cout << "Nilai Ujia         : ";
         cin >> nl[x];
         cout << endl;
@@ -48,8 +49,9 @@ void tambahdata()
         cout << "Data Ke            : " << x + 1 << endl;
         cout << "NIM                : ";
         cin >> nim[x];
+        cin.ignore();
         cout << "Nama Mahasiswa     : ";
-        cin >> nm[x];
+        getline(cin, nm[x]);
         cout << "Nilai Ujia         : ";
         cin >> nl[x];
         cout << endl;
@@ -139,8 +141,9 @@ void ubahdata()
             cout << endl;
             cout << "NIM                : ";
             cin >> nim[x];
+            cin.ignore();
             cout << "Nama Mahasiswa     : ";
-            cin >> nm[x];
+            getline(cin, nm[x]);
             cout << "Nilai Ujian        : ";
             cin >> nl[x];
         }
