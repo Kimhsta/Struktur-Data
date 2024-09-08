@@ -157,6 +157,39 @@ void ubahdata()
 }
 
 // URUTAN KECIL KE BESAR
+void bubbleSort()
+{
+    int j;
+    int nim_temp;
+    string nm_temp;
+    int nl_temp;
+
+    for (x = 1; x < jdata; x++)
+    {
+        for (j = jdata - 1; j >= x; j--)
+        {
+            if (nl[j] < nl[j - 1])
+            {
+                // temp = arr[minIndex];
+                nim_temp = nim[z];
+                nm_temp = nm[z];
+                nl_temp = nl[z];
+
+                // arr[minIndex] = arr[i];
+                nim[z] = nim[x];
+                nm[z] = nm[x];
+                nl[z] = nl[x];
+
+                // arr[i] = temp;
+                nim[x] = nim_temp;
+                nm[x] = nim_temp;
+                nl[x] = nl_temp;
+            }
+        }
+    }
+}
+
+
 int main()
 {
     int pilihan;
