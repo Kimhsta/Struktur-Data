@@ -40,8 +40,7 @@ void tambahdata()
 {
     // Proses menambhakan data
     char ulang;
-    jdata = 0;
-    x = 0;
+    x = jdata;
     ulang = 'Y';
     while (ulang == 'Y' || ulang == 'y')
     {
@@ -179,7 +178,7 @@ void bubbleSort()
                 nl[j - 1] = nl[j];
 
                 nim[j] = nim_temp;
-                nm[j] = nim_temp;
+                nm[j] = nm_temp;
                 nl[j] = nl_temp;
             }
         }
@@ -213,14 +212,14 @@ void inserSort()
                 break;
         }
         nim[j] = nim_temp;
-        nm[j] = nim_temp;
+        nm[j] = nm_temp;
         nl[j] = nl_temp;
         x++;
     }
 }
 
 // URUTAN BESAR KE KECIL DAN BANDINGKAN
-void selesctionSort()
+void selectionSort()
 {
     int j, z;
     int nim_temp;
@@ -247,7 +246,7 @@ void selesctionSort()
 
     // arr[i] = temp;
     nim[x] = nim_temp;
-    nm[x] = nim_temp;
+    nm[x] = nm_temp;
     nl[x] = nl_temp;
 }
 
@@ -329,7 +328,7 @@ main()
             }
             if (pil == 3)
             {
-                selesctionSort();
+                selectionSort();
             }
         }
         if (pilihan == 6)
