@@ -271,33 +271,70 @@ void cetakdata()
     system("pause");
 }
 
-int main()
+main()
 {
-    int pilihan;
-    do
+    int pil;
+    while (pilihan < 7)
     {
         system("cls");
         cout << "***************************************" << endl;
         cout << "*              MENU UTAMA             *" << endl;
         cout << "*-------------------------------------*" << endl;
-        cout << "*          1] INPUT DATA              *" << endl;
-        cout << "*          2] PENCARIAN DATA          *" << endl;
-        cout << "*          3] SELESAI                 *" << endl;
+        cout << "*          1] MASUKKAN DATA           *" << endl;
+        cout << "*          2] TAMBAH DATA             *" << endl;
+        cout << "*          3] UBAH DATA               *" << endl;
+        cout << "*          4] CARI DATA               *" << endl;
+        cout << "*          5] SORTING DATA            *" << endl;
+        cout << "*          6] CETAK DATA              *" << endl;
+        cout << "*          7] SELESAI                 *" << endl;
         cout << "*                                     *" << endl;
         cout << "***************************************" << endl;
-        cout << "        Masukkan Pilihan anda = ";
+        cout << "        Masukkan Pilihan anda : ";
         cin >> pilihan;
-        switch (pilihan)
+
+        if (pilihan == 1)
         {
-        case 1:
             isidata();
-            break;
-        case 2:
-            sequensial_search();
-            break;
-        default:
-            break;
         }
-    } while (pilihan <= 2);
-    return 0;
+        if (pilihan == 2)
+        {
+            tambahdata();
+        }
+        if (pilihan == 3)
+        {
+            ubahdata();
+        }
+        if (pilihan == 4)
+        {
+            sequensial_search();
+        }
+        if (pilihan == 5)
+        {
+            cout << endl;
+            system("cls");
+            cout << "***************************************" << endl;
+            cout << "*        1] METODE BUBBLE SORT        *" << endl;
+            cout << "*        2] METODE INSERT SORT        *" << endl;
+            cout << "*        3] METODE SELECTION SO       *" << endl;
+            cout << "***************************************" << endl;
+            cout << "        Masukkan Pilihan anda = ";
+            cin >> pil;
+            if (pil == 1)
+            {
+                bubbleSort();
+            }
+            if (pil == 2)
+            {
+                inserSort();
+            }
+            if (pil == 3)
+            {
+                selesctionSort();
+            }
+        }
+        if (pilihan == 6)
+        {
+            cetakdata();
+        }
+    }
 }
