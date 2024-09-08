@@ -222,6 +222,38 @@ void inserSort()
     }
 }
 
+// URUTAN BESAR KE KECIL DAN BANDINGKAN
+void selesctionSort()
+{
+    int j, z;
+    int nim_temp;
+    string nm_temp;
+    int nl_temp;
+
+    for (x = 0; x < jdata - 1; x++)
+    {
+        z = x;
+        for (j = x + 1; j < jdata; j++)
+        {
+            z = j;
+        }
+    }
+    // temp = arr[minIndex];
+    nim_temp = nim[z];
+    nm_temp = nm[z];
+    nl_temp = nl[z];
+
+    // arr[minIndex] = arr[i];
+    nim[z] = nim[x];
+    nm[z] = nm[x];
+    nl[z] = nl[x];
+
+    // arr[i] = temp;
+    nim[x] = nim_temp;
+    nm[x] = nim_temp;
+    nl[x] = nl_temp;
+}
+
 int main()
 {
     int pilihan;
