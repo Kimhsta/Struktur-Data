@@ -170,20 +170,17 @@ void bubbleSort()
         {
             if (nl[j] < nl[j - 1])
             {
-                // temp = arr[minIndex];
-                nim_temp = nim[z];
-                nm_temp = nm[z];
-                nl_temp = nl[z];
+                nim_temp = nim[j - 1];
+                nm_temp = nm[j - 1];
+                nl_temp = nl[j - 1];
 
-                // arr[minIndex] = arr[i];
-                nim[z] = nim[x];
-                nm[z] = nm[x];
-                nl[z] = nl[x];
+                nim[j - 1] = nim[j];
+                nm[j - 1] = nm[j];
+                nl[j - 1] = nl[j];
 
-                // arr[i] = temp;
-                nim[x] = nim_temp;
-                nm[x] = nim_temp;
-                nl[x] = nl_temp;
+                nim[j] = nim_temp;
+                nm[j] = nim_temp;
+                nl[j] = nl_temp;
             }
         }
     }
