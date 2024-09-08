@@ -314,7 +314,7 @@ main()
             cout << "***************************************" << endl;
             cout << "*        1] METODE BUBBLE SORT        *" << endl;
             cout << "*        2] METODE INSERT SORT        *" << endl;
-            cout << "*        3] METODE SELECTION SO       *" << endl;
+            cout << "*        3] METODE SELECTION SORT     *" << endl;
             cout << "***************************************" << endl;
             cout << "        Masukkan Pilihan anda = ";
             cin >> pil;
