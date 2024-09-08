@@ -251,6 +251,26 @@ void selesctionSort()
     nl[x] = nl_temp;
 }
 
+void cetakdata()
+{
+    system("cls");
+    cout << "               DAFTAR NILAI UJIAN MAHASISWA" << endl;
+    cout << "========================================================\n";
+    cout << "| NO |     NIM     |       NAMA MAHASISWA      |  NILAI |\n";
+    cout << "---------------------------------------------------------\n";
+
+    // Proses menampilkan data dari array
+    for (x = 0; x < jdata; x++)
+    {
+        cout << "| " << setiosflags(ios::left) << setw(4) << x + 1 << "|";
+        cout << " " << setiosflags(ios::left) << setw(10) << nim[x] << "|";
+        cout << " " << setiosflags(ios::left) << setw(24) << nm[x] << "|";
+        cout << " " << setiosflags(ios::left) << setw(8) << nl[x] << "|" << endl;
+    }
+    cout << "=========================================================" << endl;
+    system("pause");
+}
+
 int main()
 {
     int pilihan;
