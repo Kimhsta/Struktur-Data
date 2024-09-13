@@ -92,8 +92,60 @@ void sequensial_search()
             cout << "Data Ke            : " << x + 1 << endl;
             cout << "NIM                : " << data[x].nim << endl;
             cout << "Nama Mahasiswa     : " << data[x].nama << endl;
-            cout << "Nilai Ujia         : " << data[x].nilai << endl;
+            cout << "Nilai Ujian        : " << data[x].nilai << endl;
             cout << endl;
+        }
+        else
+        {
+            cout << "\n Maaf Data yang anda cari tidak ditemukan!!\n";
+            getch();
+        }
+        cout << endl;
+        cout << "Mau Cari Data Lain? (Y/T) : ";
+        cin >> takon;
+    }
+}
+
+void ubahdata()
+{
+    char takon;
+    int nocari, temu;
+    takon = 'Y';
+    while (takon == 'Y' || takon == 'y')
+    {
+        system("cls");
+        cout << "NIM yang dicari : ";
+        cin >> nocari;
+        temu = 0;
+        x = 0;
+        cout << endl;
+        while ((temu == 0) && (x < jdata))
+        {
+            if (data[x] == nocari)
+            {
+                temu = 1;
+            }
+            else
+            {
+                x = x + 1;
+            }
+        }
+        if (temu == 1)
+        {
+            system("cls");
+            cout << "Data Ke            : " << x + 1 << endl;
+            cout << "========== DATA LAMA ==========\n";
+            cout << "NIM                : " << data[x].nim << endl;
+            cout << "Nama Mahasiswa     : " << data[x].nama << endl;
+            cout << "Nilai Ujian        : " << data[x].nilai << endl;
+            cout << endl;
+            cout << "========== DATA BARU ==========\n";
+            cout << "NIM                : ";
+            cin >> data[x].nim;
+            cout << "Nama Mahasiswa     : ";
+            cin >> data[x].nama;
+            cout << "Nilai Ujian        : ";
+            cin >> data[x].nilai;
         }
         else
         {
