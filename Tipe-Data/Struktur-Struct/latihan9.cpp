@@ -229,3 +229,51 @@ void cetakdata()
     cout << "=========================================================" << endl;
     system("pause");
 }
+
+main()
+{
+    int pil;
+    while (pilihan < 7)
+    {
+        system("cls");
+        cout << "***************************************" << endl;
+        cout << "*              MENU UTAMA             *" << endl;
+        cout << "*-------------------------------------*" << endl;
+        cout << "*          1] MASUKKAN DATA           *" << endl;
+        cout << "*          2] TAMBAH DATA             *" << endl;
+        cout << "*          3] CARI DATA               *" << endl;
+        cout << "*          4] UBAH DATA               *" << endl;
+        cout << "*          5] HAPUS DATA              *" << endl;
+        cout << "*          6] CETAK DATA              *" << endl;
+        cout << "*          7] SELESAI                 *" << endl;
+        cout << "*                                     *" << endl;
+        cout << "***************************************" << endl;
+        cout << "        Masukkan Pilihan anda : ";
+        cin >> pilihan;
+
+        if (pilihan == 1)
+        {
+            isidata();
+        }
+        if (pilihan == 2)
+        {
+            tambahdata();
+        }
+        if (pilihan == 3)
+        {
+            sequensial_search();
+        }
+        if (pilihan == 4)
+        {
+            ubahdata();
+        }
+        if (pilihan == 5)
+        {
+            hapusdata();
+        }
+        if (pilihan == 6)
+        {
+            cetakdata();
+        }
+    }
+}
