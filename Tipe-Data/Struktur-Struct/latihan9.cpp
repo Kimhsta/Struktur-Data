@@ -157,3 +157,56 @@ void ubahdata()
         cin >> takon;
     }
 }
+
+void hapusdata()
+{
+    // Proses hapus data
+    char tanya;
+    int nocari, temu, x, y;
+    x = 0;
+    system("cls");
+    cout << "NIM yang inggin dicari : ";
+    cin >> nocari;
+    temu = 0;
+    x = 0;
+    y = 0;
+    cout << endl;
+    while ((temu == 0) && (x < jdata))
+    {
+        if (data[x] == nocari)
+        {
+            temu = 1;
+        }
+        else
+        {
+            x = x + 1;
+        }
+    }
+    if (temu == 1)
+    {
+        cout << "Data Ke            : " << x + 1 << endl;
+        cout << "NIM                : " << data[x].nim << endl;
+        cout << "Nama Mahasiswa     : " << data[x].nama << endl;
+        cout << "Nilai Ujian        : " << data[x].nilai << endl;
+        cout << endl;
+        cout << endl;
+        cout << "Yalin menghapus Data? [Y/T]";
+        cin >> tanya;
+        if (tanya == 'Y' || tanya == 'y')
+        {
+            x = 0;
+            while (x < jdata)
+            {
+                if (data[x].nim != nocari)
+                {
+                    data[y].nim = data[x].nim;
+                    data[y].nama = data[x].nama;
+                    data[y].nilai = data[x].nilai;
+                }
+                x = x + 1;
+            }
+            jdata = y;
+        }
+    }
+}
+
