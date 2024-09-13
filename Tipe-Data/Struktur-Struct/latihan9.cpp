@@ -37,3 +37,27 @@ void isidata()
         cin >> ulang;
     }
 }
+
+void tambahdata()
+{
+    // Proses menambah data
+    char ulang;
+    x = jdata;
+    ulang = 'Y';
+    while (ulang == 'Y' || ulang == 'y')
+    {
+        system("cls");
+        cout << "Data ke                : " << x + 1 << endl;
+        cout << "No. Induk Mahasiswa    : ";
+        cin >> data[x].nim;
+        cout << "Nama Mahasiswa         : ";
+        cin >> data[x].nama;
+        cout << "Nilai Ujian            : ";
+        cin >> data[x].nilai;
+        cout << endl;
+        jdata = jdata + 1;
+        x = x + 1;
+        cout << "Masih Tambah Data lagi? (Y/T) : ";
+        cin >> ulang;
+    }
+}
