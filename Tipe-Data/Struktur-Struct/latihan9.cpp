@@ -61,3 +61,47 @@ void tambahdata()
         cin >> ulang;
     }
 }
+
+void sequensial_search()
+{
+    char takon;
+    int nocari, temu;
+    takon = 'Y';
+    while (takon == 'Y' || takon == 'y')
+    {
+        system("cls");
+        cout << "NIM yang diCari? : ";
+        cin >> nocari;
+        temu = 0;
+        x = 0;
+        cout << endl;
+        while ((temu == 0) && (x < jdata))
+        {
+            if (data[x] == nocari)
+            {
+                temu = 1;
+            }
+            else
+            {
+                x = x + 1;
+            }
+        }
+        if (temu == 1)
+        {
+            system("cls");
+            cout << "Data Ke            : " << x + 1 << endl;
+            cout << "NIM                : " << data[x].nim << endl;
+            cout << "Nama Mahasiswa     : " << data[x].nama << endl;
+            cout << "Nilai Ujia         : " << data[x].nilai << endl;
+            cout << endl;
+        }
+        else
+        {
+            cout << "\n Maaf Data yang anda cari tidak ditemukan!!\n";
+            getch();
+        }
+        cout << endl;
+        cout << "Mau Cari Data Lain? (Y/T) : ";
+        cin >> takon;
+    }
+}
