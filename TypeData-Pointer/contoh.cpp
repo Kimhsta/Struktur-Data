@@ -11,6 +11,7 @@ main()
     cout << endl;
     cout << "Alamat dari variabel buku : " << &buku;
     cout << endl;
+    cout << endl;
     cout << "Nilai dari variabel pulpen : " << pulpen;
     cout << endl;
     cout << "Alamat dari variabel pulpen : " << &pulpen;
